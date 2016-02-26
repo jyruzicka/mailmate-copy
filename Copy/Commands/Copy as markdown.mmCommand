@@ -1,0 +1,8 @@
+{
+	name          = "Copy as markdown";
+	input         = "canonical";
+	environment   = 'MM_FROM=${from}\nMM_TO=${to}\nMM_SUBJECT=${subject}\nMM_DATE=${date}';
+	keyEquivalent = "^c";
+	uuid          = "D6659846-3E6C-4546-A4DF-50D0A5E05F85";
+	command       = '#!/bin/bash\n"${MM_BUNDLE_SUPPORT}/bin/copy_md"';
+}

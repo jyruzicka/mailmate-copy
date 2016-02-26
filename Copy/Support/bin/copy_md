@@ -1,0 +1,7 @@
+#!/usr/bin/ruby
+# encoding: UTF-8
+
+require "shellwords"
+
+header = "* **Date:** #{ENV["MM_DATE"]}\n* **From:** #{ENV["MM_FROM"]}\n* **To:** #{ENV["MM_TO"]}\n* **Subject:** #{ENV["MM_SUBJECT"]}\n\n"
+`echo #{(header + $stdin.read.inspect).shellescape} | pbcopy`

@@ -1,0 +1,8 @@
+{
+	name          = "Copy as wiki";
+	input         = "canonical";
+	environment   = "MM_FROM=${from}\nMM_TO=${to}\nMM_SUBJECT=${subject}\nMM_DATE=${date}";
+	keyEquivalent = "^c";
+	uuid          = "550219B8-6E4E-4C2B-A1F2-1043951C0947";
+	command       = '#!/bin/bash\n"${MM_BUNDLE_SUPPORT}/bin/copy_wiki"';
+}
